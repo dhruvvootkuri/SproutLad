@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='BioLad.css' rel="stylesheet">
+    <title>BioLad</title>
+</head>
+<body style='text-align: center;'>
+    <div>
+        <div style="margin-top: 3%;">
+            <a class='infoButton' style="font-family:Copperplate;" href="/home/">
+                Manually Water
+                <!-- <div class="HiddenText">Use this with caution.</div> -->
+            </a>
+        </div>
+    
+        <div id= 'inline' style="margin-top: 3%;">
+            <h1>Moisture: {{ soil_moisture }}</h2>
+            <h1>Temperature: {{ temperature }}°F</h2>
+            <h1>Humidity: {{ humidity }}%</h2>
+        </div>
+    
+        <div style="margin-top: 3%;">
+            <h1>Last Watered:</h1>
+            <p id="date"> {{ date }}</p>
+            <p id="time"> {{ time }}</p>
+        </div>
+    
+        <div style="margin-top: 3%;">
+            <form>
+                <h1>Linking Code: <input type="text"></h1>
+                <input type="submit" value="Submit Linking Code">
+            </form> 
+        </div>
+    </div>
+    
+</body>
+</html>
