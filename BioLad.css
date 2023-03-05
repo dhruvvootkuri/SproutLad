@@ -1,0 +1,15 @@
+body {
+    background-color:lightblue;
+    font-family: Copperplate;
+}
+
+.infoButton {
+    width: 300px;
+    height: 150px;
+    font-size: 30px;
+    border-radius: 5%;
+}
+
+.infoButton:hover {
+    background-color: lightgray;
+}
